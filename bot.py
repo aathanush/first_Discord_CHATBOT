@@ -1,4 +1,6 @@
 import discord
+import os
+
 client=discord.Client()
 
 @client.event
@@ -17,8 +19,6 @@ async def on_message(message):
     if message.content.lower().startswith("hello"):
         await message.channel.send("Hello! Nice to meet you :)")
 
-#Open the env file
-with open('env','r') as file:
-    token=file.read()
-client.run(token)
+#Open the .env file
+client.run(os.getenv("TOKEN"))
 
