@@ -1,5 +1,6 @@
 import discord
 import os
+import keep_alive
 
 client=discord.Client()
 
@@ -19,6 +20,8 @@ async def on_message(message):
     if message.content.lower().startswith("hello"):
         await message.channel.send("Hello! Nice to meet you :)")
 
+
+keep_alive.keep_alive()
 #Open the .env file
 client.run(os.getenv("TOKEN"))
 
