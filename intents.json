@@ -18,7 +18,7 @@
         },
         {"tag": "joke",
          "patterns": ["Tell me a joke","Make me laugh","Tell me something funny","Lol jokes"],
-         "responses": ["Look at my profile pic", ""]
+         "responses": ["Look at my profile pic", "Why don’t oysters donate to charity? Because they’re shellfish","What do you call a fly without wings? A walk!"]
         },
         {"tag": "payments",
          "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
