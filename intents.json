@@ -14,11 +14,11 @@
         },
         {"tag": "depression",
          "patterns": ["I am feeling sad", "I am lonely", "I failed","I am an idiot","Why am i like this?","I am not doing well today","I hate everything","You don’t understand, no one understands." ],
-         "responses": ["I'm here if you want to talk", "Don't be too harsh on yourself"," Don't feel down, We are here for you :)","I am an emotionless but. There's nothing more useless than me "]
+         "responses": ["I'm here if you want to talk", "Don't be too harsh on yourself"," Don't feel down, We are here for you :)","I am an emotionless bot. There's nothing more useless than me "]
         },
-        {"tag": "mopeds",
-         "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
-         "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+        {"tag": "joke",
+         "patterns": ["Tell me a joke","Make me laugh","Tell me something funny","Lol jokes"],
+         "responses": ["Look at my profile pic", ""]
         },
         {"tag": "payments",
          "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
