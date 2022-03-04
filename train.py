@@ -1,5 +1,5 @@
 import json
-from nlp import tokenize,stem
+from nlp import tokenize,stem, bag_of_words
 with open('intents.json','r') as f:
     intents=json.load()
 
@@ -18,9 +18,12 @@ for intent in intents['intents']:
 
 ignore_words=['?',',','.','!']
 all_words = [stem(w) for w in all_words if w not in ignore_words]
-all_words = sorted(set("tags"))
+all_words = sorted(set(all_words))
 
 X_train=[]
 y_train=[]
 for (pattern_sentence,tag) in xy:
-    bag_of_words()
+    bag=bag_of_words(pattern_sentence,all_words)
+    X_train.append(bag)
+    label=tags.index(tag)
+    y_train.append(label)
