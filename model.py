@@ -3,6 +3,7 @@ import torch.nn as nn
 
 class NeuralNet(nn.Module):
     def __init__(self,input_size,hidden_size,num_classes):
+        super(NeuralNet,self).__init__()
         #1st linear layer
         self.l1 = nn.Linear(input_size, hidden_size)
         #2nd linear layer
