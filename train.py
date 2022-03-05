@@ -5,6 +5,7 @@ from nlp import tokenize,stem, bag_of_words
 import numpy as np
 import torch
 import torch.nn as nn
+from model import NeuralNet
 from torch.utils.data import Dataset, DataLoader
 
 #loading the chat data (which is in json format)
@@ -53,8 +54,17 @@ class ChatDataset(Dataset):
     def __len__(self):
         return self.n_samples
 
+#Hyperparameters for the model
+input_size = len(X_train[0])
+hidden_size = 8
+output_size = len(tags)
 batch_size=8
+
+
 dataset = ChatDataset()
 train_loader=DataLoader(dataset=dataset,batch_size=batch_size, shuffle=True, num_workers=2)
+
+#creating the model
+model=NeuralNet(input_size,hidden_size,output_size)
 
 

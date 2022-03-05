@@ -20,6 +20,6 @@ class NeuralNet(nn.Module):
         out = self.l3(x)
         #no activation function for the last layer
         return out
-    
+
 
 
