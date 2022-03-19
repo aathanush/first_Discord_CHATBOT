@@ -8,14 +8,32 @@ import random
 import json
 from model import NeuralNet
 from nlp import bag_of_words, tokenize
+
+#initiating a discord client class
 client=discord.Client()
 
 #if the device has gpu, use it
 device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 #open the questions and answers file
+with open("intents.json","r") as file:
+    intents=json.load(file)
 
+#Specifying the path of pytorch file
+FILE = "data.pth"
+data=torch.load(FILE)
+#loading all the necessary variables required for the model
+input_size=data["input_size"]
+hidden_size=data["hidden_size"]
+output_size=data["output_size"]
+all_words=data["all_words"]
+tags=data["tags"]
+model_state=data["model_state"]
+
+#building the model
 model=NeuralNet(input_size,hidden_size,output_size).to(device)
+model.load_state_dict(model_state)
+model.eval()
 
 @client.event
 #Command executes when the bot starts functioning
@@ -29,9 +47,11 @@ async def on_message(message):
     if message.author==client.user:
         return
 
-    #When the bot sees the message hello
-    if message.content.lower().startswith("hello"):
-        await message.channel.send("Hello! Nice to meet you :)")
+    #When the bot sees a message by the user
+    # if message.content.lower().startswith("hello"):
+    #     await message.channel.send("Hello! Nice to meet you :)")
+    sentence=tokenize(message.content)
+    X = bag_of_words(sentence, all_words)
 
 
 keep_alive.keep_alive()
