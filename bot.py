@@ -5,12 +5,16 @@ import os
 import keep_alive
 import torch
 import random
-import  json
+import json
 from model import NeuralNet
 from nlp import bag_of_words, tokenize
 client=discord.Client()
 
+#if the device has gpu, use it
 device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+#open the questions and answers file
+
 model=NeuralNet(input_size,hidden_size,output_size).to(device)
 
 @client.event
