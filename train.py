@@ -89,3 +89,14 @@ for epoch in range(num_epochs):
     if (epoch+1)%100==0:
         print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}')
 print(f"final loss, loss={loss.item():.4f}")
+
+#Storing the details of the model
+model={"model_state":model.state_dict(), "input_size":input_size, "output_size":output_size,"hidden_size":hidden_size,"all_words":all_words,"tags":tags}
+
+#Creating a file data.pth (PyTorch)
+FILE = "data.pth"
+torch.save(FILE)
+
+#notifying that the file has been saved
+print(f"training complete!! file saved to {FILE}")
+
