@@ -1,7 +1,11 @@
 import discord
 import os
 import keep_alive
-
+import torch
+import random
+import  json
+from model import NeuralNet
+from nlp import bag_of_words, tokenize
 client=discord.Client()
 
 @client.event
