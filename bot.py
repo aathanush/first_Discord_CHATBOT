@@ -52,6 +52,29 @@ async def on_message(message):
     #     await message.channel.send("Hello! Nice to meet you :)")
     sentence=tokenize(message.content)
     X = bag_of_words(sentence, all_words)
+    X=X.reshape(1,X.shape[0])
+    X=torch.from_numpy()
+
+    output=model(X)
+
+    #getting the predictions
+    _, predicted = torch.max(output,dim=1)
+    #grabbing the entity matching with the tag
+    tag=tags[predicted.item()]
+
+    #using softmax to check the probability of a tag being the required one
+    probability=torch.softmax(output,dim=1)
+    prob=probability[0][predicted.item()]
+
+    #send messages if probability is > 0.75
+    if prob > 0.75:
+        for intent in intents["intents"]:
+            if tag==intent["tag"]:
+                await message.channel.send(f"{random.choice(intent['responses'])}")
+            else:
+                await message.channel.send("Sorry! I can't understand you dear :-(")
+    else:
+        await message.channel.send("Sorry! I can't understand you dear :-(2")
 
 
 keep_alive.keep_alive()
