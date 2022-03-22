@@ -10,7 +10,7 @@ from torch.utils.data import Dataset, DataLoader
 
 #loading the chat data (which is in json format)
 with open('intents.json','r') as f:
-    intents=json.load()
+    intents=json.load(f)
 
 #all_words would consist of all the question words, tags would contain the catergory in which the question would belong
 #xy contains the tag and word as a tuple (x,y)
@@ -21,7 +21,7 @@ xy=[]
 for intent in intents['intents']:
     tag=intent['tag']
     tags.append(tag)
-    for pattern in intents['patterns']:
+    for pattern in intent['patterns']:
         w=tokenize(pattern)
         all_words.extend(w)
         xy.append((w,tag))
@@ -58,12 +58,12 @@ class ChatDataset(Dataset):
 input_size = len(X_train[0])
 hidden_size = 8
 output_size = len(tags)
-batch_size=8
+batch_size=1
 learning_rate=0.001
 num_epochs=1000
 
 dataset = ChatDataset()
-train_loader=DataLoader(dataset=dataset,batch_size=batch_size, shuffle=True, num_workers=2)
+train_loader=DataLoader(dataset=dataset,batch_size=batch_size, shuffle=True, num_workers=0)
 
 #creating the model
 #Use GPU if it is available
