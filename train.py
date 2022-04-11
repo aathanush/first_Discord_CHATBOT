@@ -56,9 +56,9 @@ class ChatDataset(Dataset):
 
 #Hyperparameters for the model
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = 64
 output_size = len(tags)
-batch_size=1
+batch_size=4
 learning_rate=0.001
 num_epochs=1000
 
@@ -80,7 +80,7 @@ for epoch in range(num_epochs):
         words=words.to(device)
         labels=labels.to(device)
         #forward
-        outputs=model(words)
+        outputs=model(words).type(torch.LongTensor)
         loss=criterion(outputs,labels)
         #backward and optimizer step
         optimizer.zero_grad()
