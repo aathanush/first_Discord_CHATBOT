@@ -76,6 +76,7 @@ async def on_message(message):
     #else:
     #    await message.channel.send("Sorry! I can't understand you dear :-(2")
 
+#
 
 #keep_alive.keep_alive()
 #Open the .env file
