@@ -3,7 +3,7 @@
 My first discord bot :)
 
 
-## bot invitation link: 
+## bot invitation link: (will be updated later)
 
 
 
