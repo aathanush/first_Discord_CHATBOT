@@ -18,7 +18,7 @@ The code was executed in replit and monitored by UptimeRobot
 
 NOTE: Bot still under progress
 
-
+To-dos: Come up with a purpose for this discord bot
 
 
 Reference links: 
