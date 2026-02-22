@@ -18,7 +18,6 @@ The code was executed in replit and monitored by UptimeRobot
 
 NOTE: Bot still under progress
 
-Update: Under work
 
 
 
