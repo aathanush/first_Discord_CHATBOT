@@ -1,6 +1,6 @@
 # first_Discord_CHATBOT
 
-My first discord bot :)
+My first discord bot :). Greets good morning at 4 AM in the morning everyday.
 
 
 ## bot invitation link: (will be updated later)
