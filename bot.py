@@ -1,5 +1,5 @@
 #Import all modules
-
+import time
 import discord
 import os
 import json
