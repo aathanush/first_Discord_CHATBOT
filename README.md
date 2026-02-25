@@ -1,6 +1,6 @@
 # first_Discord_CHATBOT
 
-My first discord bot :). Greets good morning at 4 AM in the morning everyday.
+My first discord bot :). 
 
 
 ## bot invitation link: (will be updated later)
@@ -17,7 +17,7 @@ The code was executed in replit and monitored by UptimeRobot
 
 NOTE: Bot still under progress
 
-To-dos: Come up with a purpose for this discord bot
+To-dos: Come up with a purpose for this discord bot 
 
 
 Reference links: 
