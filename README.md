@@ -1,6 +1,6 @@
 # first_Discord_CHATBOT
 
-My first discord bot :). 
+My first Discord bot :). 
 
 
 ## bot invitation link: (will be updated later)
