@@ -9,7 +9,7 @@ My first Discord bot :).
 
 programming language used: `python`
 
-modules required: `flask` , `discord`, `nltk`
+modules required: `flask`, `discord`, `nltk`
 
 
 
