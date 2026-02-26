@@ -12,7 +12,6 @@ programming language used: `python`
 modules required: `flask` , `discord`, `nltk`
 
 
-The code was executed in replit and monitored by UptimeRobot 
 
 
 NOTE: Bot still under progress
