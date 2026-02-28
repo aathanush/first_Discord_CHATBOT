@@ -1,6 +1,6 @@
 # first_Discord_CHATBOT
 
-My first Discord bot :). 
+My first Discord bot :). Gives a random reply
 
 
 ## bot invitation link: (will be updated later)
@@ -16,7 +16,6 @@ modules required: `flask`, `discord`, `nltk`
 
 NOTE: Bot still under progress
 
-To-dos: Come up with a purpose for this discord bot (based on utilities available in the documentation)
 
 
 Reference links: 
