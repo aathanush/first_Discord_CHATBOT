@@ -17,7 +17,8 @@ modules required: `flask`, `discord`, `nltk`
 NOTE: Bot still under progress<br>
 to-dos: find a way to integrate https://github.com/nlp-compromise/nlp-corpus or any other corpus into chatbot
 
-Reference links: 
+Reference links:
+
 
 > 1. https://www.youtube.com/playlist?list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQpJyg
 > 2. https://www.youtube.com/watch?v=SPTfmiYiuok
