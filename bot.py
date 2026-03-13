@@ -4,7 +4,6 @@ import discord
 import os
 import json
 
-
 client=discord.Client()
 
 @client.event
