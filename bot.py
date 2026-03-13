@@ -27,4 +27,3 @@ async def on_message(message):
 
 #Open the .env file
 client.run(os.getenv("TOKEN"))
-
