@@ -7,8 +7,6 @@ import json
 
 client=discord.Client()
 
-
-
 @client.event
 #Command executes when the bot starts functioning
 async def on_ready():
