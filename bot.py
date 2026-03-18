@@ -3,6 +3,7 @@ import time
 import discord
 import os
 import json
+from random import randint
 
 client=discord.Client()
 
