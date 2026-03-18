@@ -6,6 +6,7 @@ import json
 from random import randint
 
 client=discord.Client()
+replies=[]
 
 @client.event
 #Command executes when the bot starts functioning
