@@ -7,6 +7,7 @@ from random import randint
 
 client=discord.Client()
 replies=[]
+with open("replies.txt") as file:
 
 @client.event
 #Command executes when the bot starts functioning
