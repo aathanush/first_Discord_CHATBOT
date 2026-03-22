@@ -23,7 +23,7 @@ async def on_message(message):
         return
 
     #When the bot sees a message by the user
-    if message.content.lower().startswith("hello"):
+    else:
         await message.channel.send("Hello! Nice to meet you :)")
 
 #Open the .env file
