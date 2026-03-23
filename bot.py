@@ -24,6 +24,7 @@ async def on_message(message):
 
     #When the bot sees a message by the user
     else:
+        pass
         #await message.channel.send("Hello! Nice to meet you :)")
 
 #Open the .env file
