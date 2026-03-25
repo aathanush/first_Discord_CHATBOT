@@ -27,7 +27,7 @@ async def on_message(message):
         pass
         # send random.randint(len(replies))
         index = random.randint(len(replies))
-        await message.channel.send()
+        await message.channel.send(replies[i])
         #await message.channel.send("Hello! Nice to meet you :)")
 
 #Open the .env file
