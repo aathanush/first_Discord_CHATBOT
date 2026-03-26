@@ -27,7 +27,6 @@ async def on_message(message):
         pass
         index = random.randint(len(replies))
         await message.channel.send(replies[index])
-        #await message.channel.send("Hello! Nice to meet you :)")
 
 #Open the .env file
 client.run(os.getenv("TOKEN"))
