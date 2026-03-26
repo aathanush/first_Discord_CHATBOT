@@ -25,7 +25,6 @@ async def on_message(message):
     #When the bot sees a message by the user
     else:
         pass
-        # send random.randint(len(replies))
         index = random.randint(len(replies))
         await message.channel.send(replies[index])
         #await message.channel.send("Hello! Nice to meet you :)")
