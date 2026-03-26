@@ -10,7 +10,7 @@ programming language used: `python`
 modules required: `flask`, `discord`, `nltk`
 
 
-
+To-dos: update bot-link in the repo
 
 NOTE: Bot still under progress<br>
 
