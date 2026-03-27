@@ -6,7 +6,7 @@ My first Discord bot :) Gives a random reply.
 
 Programming language used: `python`
 
-modules required: `flask`, `discord`, `nltk`
+Modules required: `flask`, `discord`, `nltk`
 
 
 To-dos: update bot-link in the repo
