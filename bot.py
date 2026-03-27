@@ -10,7 +10,7 @@ with open("replies.txt") as file:
     replies = file.readlines()
 
 @client.event
-#Command executes when the bot starts functioning
+
 async def on_ready():
     print(f"Logged in as {client.user}")
 
