@@ -4,8 +4,7 @@ My first Discord bot :) Gives a random reply.
 
 ## bot invitation link: (will be updated later)
 
-
-programming language used: `python`
+Programming language used: `python`
 
 modules required: `flask`, `discord`, `nltk`
 
