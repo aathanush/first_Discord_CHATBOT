@@ -11,6 +11,7 @@ Modules required: `flask`, `discord`, `nltk`
 
 
 To-dos: update bot-link in the repo
+relearn configuring discord chatbots
 
 NOTE: Bot still under progress<br>
 
