@@ -14,6 +14,7 @@ To-dos:
 relearn configuring discord chatbots
 update bot-link in the repo
 
+
 NOTE: Bot still under progress<br>
 
 Dataset: https://www.kaggle.com/datasets/dalageo/random-english-sentences/data
