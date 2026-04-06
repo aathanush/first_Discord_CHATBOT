@@ -10,8 +10,9 @@ Programming language used: `python`
 Modules required: `flask`, `discord`, `nltk`
 
 
-To-dos: update bot-link in the repo
+To-dos: 
 relearn configuring discord chatbots
+update bot-link in the repo
 
 NOTE: Bot still under progress<br>
 
