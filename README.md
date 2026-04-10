@@ -8,6 +8,7 @@ Modules required: `flask`, `discord`, `nltk`
 
 
 To-dos: 
+
 relearn configuring discord chatbots
 
 update bot-link in the repo
