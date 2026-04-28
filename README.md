@@ -1,4 +1,4 @@
-# first_Discord_CHATBOT
+# First Discord mCHATBOT
 
 My first Discord bot :) Gives a random reply..
 ## bot invitation link: (will be updated later)
