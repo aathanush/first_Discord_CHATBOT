@@ -13,7 +13,7 @@ study about Discord
 
 Relearn configuring discord chatbots
 
-update bot-link in the repo
+update bot-link in the repo.
 
 NOTE: Bot still under progress<br>
 
