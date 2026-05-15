@@ -9,7 +9,7 @@ Modules required: `flask`, `discord`, `nltk`
 
 To-dos: 
 
-study about Discord
+study about Discord.
 
 Relearn configuring discord chatbots.
 
